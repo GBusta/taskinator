@@ -1,4 +1,5 @@
-var buttonEl = document.querySelector("#save-task")
+// Targets the form in HTML
+var formEl = document.querySelector("#task-form");
 var tasksToDoEl = document.querySelector("#tasks-to-do");
 
 var createTaskHandler = function() {
@@ -8,6 +9,6 @@ var createTaskHandler = function() {
     tasksToDoEl.appendChild(listItemEl);
 }
 
-buttonEl.addEventListener("click", createTaskHandler);
+formEl.addEventListener("submit", createTaskHandler);
 // console.log(buttonEl)
-// 4.1.9 Reflection
+// 4.2.5 Handle Form Submission
