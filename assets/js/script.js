@@ -1,5 +1,3 @@
-feature/updating-tasks
-
 // Targets the form in HTML
 var formEl = document.querySelector("#task-form");
 var tasksToDoEl = document.querySelector("#tasks-to-do");
