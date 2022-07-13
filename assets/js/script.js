@@ -166,15 +166,16 @@ var taskStatusChangeHandler = function(event) {
     var taskSelected = document.querySelector(".task-item[data-task-id'" + taskIdea + "']");
 
     if (statusValue === "to do") {
-        tasksToDoEl.appendChild(taskSelected) {
-        else if (statusValue === "In Progress")
-        tasksInProgressEl.appendChild(taskSelected);
-        };
-        else if (statusValue === "completed") {
-        tasksCompletedEl.appendChild(taskSelected);
-        };
-    };
+        tasksToDoEl.appendChild(taskSelected); 
+    }
+    else if (statusValue === "In Progress") {
+    tasksInProgressEl.appendChild(taskSelected);
+    }
+    else if (statusValue === "completed") {
+    tasksCompletedEl.appendChild(taskSelected);
+    }
 };
+
 
 // Submit Event Listener
 formEl.addEventListener("submit", taskFormHandler);
